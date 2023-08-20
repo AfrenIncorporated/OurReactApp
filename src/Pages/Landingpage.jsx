@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import '../Styles/Landingpage.css'
+import medal from '../assets/afren-images/medal.png'
 import star from '../assets/afren-images/rating-star.png'
 import fujitsu_logo from '../assets/afren-images/fujitsu-logo.png'
 import Pomeroy_Logo from '../assets/afren-images/Pomeroy-Logo.png'
@@ -22,8 +23,8 @@ export default function Landingpage() {
         <Navbar />
         <header>
         <div className="award-description">
-            <img src="afren-images/medal.png" alt=""/>
-            <p className="typr"></p>
+            <img src={medal} alt=""/>
+            <p className="typr"> An award-winning freelance marketplace in the industry!</p>
         </div>
         <h1 className="header-description-text1">
             Unleash talent. Master any task.
