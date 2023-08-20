@@ -89,7 +89,7 @@ input {
     width: 100%;
 }
 
-input[type="email"]{
+.email > input{
     margin-bottom: 20px;
     height: 40px;
     padding: 5px;

@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/Login.css";
+import { useNavigate } from 'react-router-dom'
 import logo from '../assets/afren-images/afren-logo.png'
 import googleIcon from '../assets/afren-images/google-icon.png'
 import pinkRoundImg from '../assets/afren-images/pink-roung-img.png'
@@ -7,12 +8,15 @@ import verified from '../assets/afren-images/verified.png'
 
 
 export default function Login() {
+  const navigate = useNavigate()
+
   return (
     <>
       <section className="login">
         <section className="form_area" name="afren">
           <form action="">
             <img
+              onClick={()=>navigate('/')}
               src={logo}
               alt=""
               className="logo-la-la"

@@ -10,7 +10,7 @@ export default function Footer() {
         </div>
         <div  className="footercontent">
             <div className="footerhead">
-                <h3 onclick="footTwo()">For technicians</h3>
+                <h3>For technicians</h3>
                 <div className="footerinnercontent" id="footerinnercontent2">
                     <a href="" className="footer-link">Overview</a>
                     <a href="" className="footer-link">Insurance</a>
@@ -18,7 +18,7 @@ export default function Footer() {
                 </div>
             </div> 
             <div className="footerhead">
-                <h3 onclick="footThree()">Resources</h3>
+                <h3>Resources</h3>
                 <div className="footerinnercontent" id="footerinnercontent3">
                     <a href="" className="footer-link">Blog</a>
                     <a href="" className="footer-link">Stories</a>
@@ -29,7 +29,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footerhead">
-                <h3 onclick="footFour()">Other</h3>
+                <h3>Other</h3>
                 <div className="footerinnercontent" id="footerinnercontent4">
                     <a href="" className="footer-link">Careers</a>
                     <a href="" className="footer-link">Webinars & events</a>
@@ -39,7 +39,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footerhead">
-                <h3 onclick="footFive()">Connect with us</h3>
+                <h3>Connect with us</h3>
                 <div className="footerinnercontent" id="footerinnercontent5">
                     <a href="" className="footer-link">+1 233-577-4855</a>
                     <a href="" className="footer-link">733 Marquette Avenue S</a>

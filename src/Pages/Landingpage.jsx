@@ -11,8 +11,8 @@ import Worldlink_Logo from'../assets/afren-images/Worldlink-Logo.png'
 import search from '../assets/afren-images/search.png'
 import box_workforce from '../assets/afren-images/box-workforce.png'
 import workforce_badge from'../assets/afren-images/workforce-badge.png'
-import pink_roung_img from '../assets/afren-images/pink-roung-img.png'
-import verified from '../assets/afren-images/verified.png'
+import Testimonials from '../Components/Testimonials'
+import JoinUs from '../Components/JoinUs'
 import Footer from '../Components/Footer'
 
 
@@ -231,105 +231,8 @@ export default function Landingpage() {
             View all
         </a>
         </div>
-        <div className="wrapper">
-        <h1>See what our clients are saying</h1>
-        <div className="outer">
-            <div className="card" style={{"--delay":-1}}>
-                <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
-                <div className="inner-bottom">
-                    <div className="user-prof">
-                        <div className="prof-pic">
-                        <img src={pink_roung_img} alt=""/>
-                        </div>
-                        <div className="details">
-                            <p>Mitchell Bronne1</p>
-                            <p><b>CEO Malistack</b></p>
-                            <p><i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i></p>
-                        </div>
-                    </div>
-                    <div className="client">
-                        <img src={verified} alt=""/> <small>verified client</small></div>
-                </div>
-            </div>
-            <div className="card" style={{"--delay":0}}>
-                <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
-                <div className="inner-bottom">
-                    <div className="user-prof">
-                        <div className="prof-pic">
-                            <img src={pink_roung_img} alt=""/>
-                        </div>
-                        <div className="details">
-                            <p>Mitchell Bronne2</p>
-                            <p><b>CEO Malistack</b></p>
-                            <p><i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i></p>
-                        </div>
-                    </div>
-                    <div className="client"><img src={verified} alt=""/> <small>verified client</small></div>
-                </div>
-            </div>
-            <div className="card" style={{"--delay":1}}>
-                <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
-                <div className="inner-bottom">
-                    <div className="user-prof">
-                        <div className="prof-pic">
-                            <img src={pink_roung_img} alt=""/>
-                        </div>
-                        <div className="details">
-                            <p>Mitchell Bronne3</p>
-                            <p><b>CEO Malistack</b></p>
-                            <p><i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i></p>
-                        </div>
-                    </div>
-                    <div className="client">
-                        <img src={verified} alt=""/> <small>verified client</small></div>
-                </div>
-            </div>
-            <div className="card" style={{"--delay":2}}>
-                <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
-                <div className="inner-bottom">
-                    <div className="user-prof">
-                        <div className="prof-pic">
-                            <img src={pink_roung_img} alt=""/>
-
-                            </div>
-                        <div className="details">
-                            <p>Mitchell Bronne4</p>
-                            <p><b>CEO Malistack</b></p>
-                            <p><i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i></p>
-                        </div>
-                    </div>
-                    <div className="client"><img src={verified} alt=""/> <small>verified client</small></div>
-                </div>
-            </div>
-            <div className="card" style={{"--delay":2}}>
-                <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
-                <div className="inner-bottom">
-                    <div className="user-prof">
-                        <div className="prof-pic">
-                            <img src={pink_roung_img} alt=""/>
-                        </div>
-                        <div className="details">
-                            <p>Mitchell Bronne5</p>
-                            <p><b>CEO Malistack</b></p>
-                            <p><i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i></p>
-                        </div>
-                    </div>
-                    <div className="client"><img src={verified} alt=""/> <small>verified client</small></div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div className="last-item">
-        <h1>
-            Join Us at Afren
-        </h1>
-        <p>
-            Get started today to get professionals dedicated to delivering high-quality work that exceeds your expectations, or finding the job of your dreams
-        </p>
-        <a href="#">
-            Get Started
-        </a>
-        </div>
+        <Testimonials/>
+        <JoinUs/>
         <Footer />
     </>
   )
