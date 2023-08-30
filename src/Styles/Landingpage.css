@@ -257,8 +257,13 @@ header {
     font-size: 1.4rem;
 }
 
-
-
+/* div.center-item-slider{
+    display: flex;
+    width:100vw;
+} */
+/* div.center-item-slider > div{
+    width: 450px;
+} */
 
 
 

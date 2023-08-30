@@ -14,10 +14,23 @@ import workforce_badge from'../assets/afren-images/workforce-badge.png'
 import Testimonials from '../Components/Testimonials'
 import JoinUs from '../Components/JoinUs'
 import Footer from '../Components/Footer'
-
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Landingpage() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        speed: 500,
+        slidesToShow: 3,
+        swipeToSlide: true,
+        slidesToScroll: 3,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        cssEase: "linear"
+      };
   return (
     <>
         <Navbar />
@@ -51,6 +64,7 @@ export default function Landingpage() {
         <div className="row">
             <div className="col-md-12">
                  <div className="center-item-slider">
+                    <Slider {...settings}>
                    <div className="holder slide1">
                         <div className="slide-content">
                             <h1 className="full-name">
@@ -153,6 +167,7 @@ export default function Landingpage() {
                             </figure>
                         </div>
                    </div>
+                   </Slider>
                  </div>
               </div>
             </div>
