@@ -9,6 +9,8 @@ import News from './Pages/News'
 import HowItWorks from './Pages/HowItWorks'
 import Privacy from './Pages/Privacy'
 import RegThree from './Pages/RegThree'
+import RegTwo from './Pages/RegTwo'
+import Terms from './Pages/Terms'
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
         <Route path='/howitworks' element={<HowItWorks />} />
         <Route path='/privacy' element={<Privacy />} />
         <Route path="/regthree" element={<RegThree />} />
+        <Route path="/regtwo" element={<RegTwo />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
     </Router>
   )
