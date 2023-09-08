@@ -9,11 +9,11 @@ export default function Freelancer() {
         <Navbar />
         <div class="menu-cover">
             <ul class="side-menu">
-            <li class="menu-opt"><a class="active" href=""><i class="fa fa-qrcode icon" aria-hidden="true"></i>Dashboard</a></li>
-            <li class="menu-opt"><a href=""><i class="fa fa-comment-o icon" aria-hidden="true"></i>Messages</a></li>
-            <li class="menu-opt"><a href=""><i class="fas fa-suitcase icon"></i>My Jobs</a></li>
-            <li class="menu-opt"><a href=""><i class="fas fa-award icon"></i>Leader board</a></li>
-            <li class="menu-opt"><a href=""><i class="far fa-credit-card icon"></i>Billings</a></li>
+            <li class="menu-opt2"><a class="active" href=""><i class="fa fa-qrcode icon" aria-hidden="true"></i>Dashboard</a></li>
+            <li class="menu-opt2"><a href=""><i class="fa fa-comment-o icon" aria-hidden="true"></i>Messages</a></li>
+            <li class="menu-opt2"><a href=""><i class="fas fa-suitcase icon"></i>My Jobs</a></li>
+            <li class="menu-opt2"><a href=""><i class="fas fa-award icon"></i>Leader board</a></li>
+            <li class="menu-opt2"><a href=""><i class="far fa-credit-card icon"></i>Billings</a></li>
             <li id="sett-divdrop">
                 <p id="sett-btn"><i class="fas fa-cog icon"></i>Settings <i class="fas fa-caret-down sett-drpic"></i></p>
                 <div id="settdrop-cover">
@@ -29,8 +29,8 @@ export default function Freelancer() {
                     </div>
                 </div>
             </li>
-            <li class="menu-opt"><a href=""><i class="far fa-question-circle icon"></i>Help Center</a></li>
-            <li class="menu-opt"><a href=""><i class="fas fa-sign-out-alt icon"></i>Logout</a></li>
+            <li class="menu-opt2"><a href=""><i class="far fa-question-circle icon"></i>Help Center</a></li>
+            <li class="menu-opt2"><a href=""><i class="fas fa-sign-out-alt icon"></i>Logout</a></li>
             </ul>
         </div>
         <div id="main">
@@ -49,7 +49,6 @@ export default function Freelancer() {
                     </div>
                 </div>
             </div>
-        </div>
         <div id="sec">
             <div id="sec-left">
                 <img id="half-circle" src="src/assets/afren-images/Ellipse 179.png" alt=""/>
@@ -334,6 +333,7 @@ export default function Freelancer() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </>
   )

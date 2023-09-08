@@ -14,6 +14,7 @@ import Terms from './Pages/Terms'
 import BuyerReg from './Pages/BuyerReg'
 import ContactUs from './Pages/ContactUs'
 import Freelancer from './Pages/Freelancer'
+import Testimonails from './Pages/Testimonails'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/buyerreg" element={<BuyerReg />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/freelancer" element={<Freelancer />} />
+        <Route path="/testimonails" element={<Testimonails />} />
       </Routes>
     </Router>
   )

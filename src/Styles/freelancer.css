@@ -26,7 +26,7 @@
 .side-menu::-webkit-scrollbar{
     display: none;
 }
-.menu-opt a{
+.menu-opt2 a{
     display: flex;
     align-items: center;
     border-radius: 8px;
@@ -49,11 +49,11 @@
 .side-menu li{
     list-style-type: none;
 }
-.menu-opt a:hover{
+.menu-opt2 a:hover{
     background-color: rgba(153, 152, 152, 0.452);
 }
-.menu-opt a.active,
-.menu-opt a.active:hover{
+.menu-opt2 a.active,
+.menu-opt2 a.active:hover{
     background-color: #3AC3D6;
     color: white;
 }
@@ -658,7 +658,15 @@
     border-radius: 10px;
     font-weight: bold;
 }
-
+@media (max-width: 1070px) {
+    .side-menu {
+      width: 190px;
+    }
+    #main {
+        width: calc(100% - 190px);
+        left: 190px;
+      }
+}
 @media (max-width: 1142px){
     .inv-typ-pgrss{
         flex-direction: column;
