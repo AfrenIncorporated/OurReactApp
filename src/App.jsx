@@ -10,6 +10,7 @@ import HowItWorks from './Pages/HowItWorks'
 import Privacy from './Pages/Privacy'
 import RegThree from './Pages/RegThree'
 import RegTwo from './Pages/RegTwo'
+import RegOne from './Pages/RegOne'
 import Terms from './Pages/Terms'
 import BuyerReg from './Pages/BuyerReg'
 import ContactUs from './Pages/ContactUs'
@@ -31,6 +32,7 @@ function App() {
         <Route path='/privacy' element={<Privacy />} />
         <Route path="/regthree" element={<RegThree />} />
         <Route path="/regtwo" element={<RegTwo />} />
+        <Route path="/regone" element={<RegOne />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/buyerreg" element={<BuyerReg />} />
         <Route path="/contact" element={<ContactUs />} />
