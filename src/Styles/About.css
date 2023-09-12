@@ -36,6 +36,17 @@
     width: 70%;
     margin-top: 50px;
     margin-bottom: 50px;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+#sec-textdiv.moveRight{
+    animation: moveRight 1s ease  forwards ;
+}
+@keyframes moveRight{
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 #sec-textdiv h1{
     margin-bottom: 20px;
@@ -375,7 +386,7 @@
     #second-div{
         background-color: white;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
     }
     #sec-textdiv{
         width: 70%;

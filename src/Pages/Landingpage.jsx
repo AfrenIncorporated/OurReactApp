@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useRef, useEffect} from 'react'
 import Navbar from '../Components/Navbar'
 import '../Styles/Landingpage.css'
 import medal from '../assets/afren-images/medal.png'
@@ -19,6 +19,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function Landingpage() {
+    const [content, setContent] = useState("An award-winning freelance marketplace in the industry!")
+    const contentRef = useRef(null);
     const settings = {
         dots: true,
         infinite: true,
@@ -31,13 +33,28 @@ export default function Landingpage() {
         pauseOnHover: true,
         cssEase: "linear"
       };
+    const array = content.split("");
+    let textInterval
+    function frameLooper(){
+        if (array.length > 0){
+            contentRef.current.innerHTML += array.shift();
+        }
+        else{
+            clearInterval(textInterval)
+        }
+         textInterval = setTimeout(()=>frameLooper(),70)
+    }
+    useEffect(()=>{
+        frameLooper()
+    },[content])
+
   return (
     <>
         <Navbar />
         <header>
         <div className="award-description">
             <img src={medal} alt=""/>
-            <p className="typr"> An award-winning freelance marketplace in the industry!</p>
+            <p ref={contentRef} className="typr"></p>
         </div>
         <h1 className="header-description-text1">
             Unleash talent. Master any task.

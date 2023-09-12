@@ -34,7 +34,7 @@ export default function Testiminails() {
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}  
             >
-                <SwiperSlide style={{width: "50%"}} className="card2 swiper-slide2">
+                <SwiperSlide className="card2 swiper-slide2">
                     <div class="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
                     <div class="inner-bottom">
                         <div class="user-prof">

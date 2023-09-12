@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect,useRef} from 'react'
 import Navbar from '../Components/Navbar'
 import '../Styles/About.css'
 import globe from '../assets/afren-images/Globe 1@300x-8 1.png'
@@ -13,8 +13,22 @@ import JoinUs from '../Components/JoinUs'
 import Footer from '../Components/Footer'
 
 
-
 export default function About() {
+    const divRef = useRef(null)
+    useEffect(()=>{
+        const observer = new IntersectionObserver(
+            ([entry])=>{
+                if(entry.isIntersecting){
+                    divRef.current.classList.add("moveRight");
+                    observer.disconnect()
+                }
+            }
+        )
+        observer.observe(divRef.current)
+        return ()=>{
+            observer.disconnect();
+        }
+    },[])
   return (
     <>
         <Navbar />
@@ -25,16 +39,12 @@ export default function About() {
             </div>
             <div id="globe"><img src={globe} alt=""/></div>
         </div>
-        <div id="second-div">
-            <div id="sec-textdiv" data-aos="fade-right"> 
+        <div  id="second-div">
+            <div ref={divRef} id="sec-textdiv"> 
                 <h1>Bridging the gap between Client and Freelancers</h1>
                 <p>After the U.S. economy took a hit in 2008, the way people work changed. Companies saw the potential that came with integrating contract and on-demand labor solutions into their core business. On the other side of the equation, workers of all stripes began embracing flexible work opportunities that allowed them to make use of their talents while maintaining a balanced life.</p>
                 <p>Founder and CEO Mynul Khan witnessed this shift as it manifested in the IT world. He identified a problem: The growing opportunity for skilled IT technicians to work independently with service companies was being obstructed by insufficient means to connect. He saw a barrier to work, in other words––and a way through it.</p>
             </div>
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script>
-                AOS.init();
-            </script>
         </div>
         <div id="lead-teamouter">
             <div id="lead-teaminner">
