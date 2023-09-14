@@ -27,11 +27,11 @@
 
 }
 
-.prog-line{
+/* .prog-line{
     width: 20%;
     height: 1px;
     background-color: rgba(179, 177, 177, 0.849);
-}
+} */
 .page-num{
     width: 35px;
     height: 35px;
@@ -42,19 +42,19 @@
     background-color: rgba(179, 177, 177, 0.849);
     border-radius: 50%;
 }
-#line-one{
+/* #line-one{
     background-color: #3ac3d6;
-}
-#line-two{
+} */
+/* #line-two{
     background-color: #3ac3d6;
-}
-#line-three{
+} */
+/* #line-three{
     background-color: #3ac3d6;
-}
-#line-four{
+} */
+/* #line-four{
     background: linear-gradient(90deg, #3ac3d6 50%, rgba(179, 177, 177, 0.849) 50%);
-}
-#pg-one{
+} */
+/* #pg-one{
     background-color: #3ac3d6;
 }
 #pg-two{
@@ -62,7 +62,7 @@
 }
 #pg-three{
     background-color: #3ac3d6;
-}
+} */
 form{
     width: 100%;
     padding-left: 5%;

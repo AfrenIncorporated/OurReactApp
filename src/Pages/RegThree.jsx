@@ -1,26 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Components/Navbar'
 import plus from "../assets/afren-images/Plus.svg"
 import '../Styles/regthree.css'
-export default function RegThree() {
+export default function RegThree({func}) {
+  const [formObj,setFormObj] = useState({
+    occupation : "",
+    skill : "",
+    years : "",
+    addSkills : "",
+    url : "",
+    url2: "",
+    url3: ""
+  })
+
+  const {
+          occupation, 
+          skill, 
+          addSkills, 
+          years, 
+          url, 
+          url2, 
+          url3} = formObj
+
+  function changeHandler(e){
+    const {value,name} = e.target;
+    setFormObj({
+      ...formObj,
+      [name] : value
+    })
+  
+  }
+
   return (
     <>
-      <Header />
-      <div id="form-cover">
-        <div id="form">
-            <h2>Complete your registration</h2>
-            <div id="page-progress">
-                <div class="prog-line" id="line-one"></div>
-                <div class="page-num" id="pg-one">1</div>
-                <div class="prog-line" id="line-two"></div>
-                <div class="page-num" id="pg-two">2</div>
-                <div class="prog-line" id="line-three"></div>
-                <div class="page-num" id="pg-three">3</div>
-                <div class="prog-line" id="line-four"></div>
-            </div>
             <form action="">
                 <h4>Professional Info</h4>
-                <select class="form-control dropdown" id="occupation" name="occupation">
+                <select onChange={changeHandler} value={occupation} name={occupation} class="form-control dropdown" id="occupation">
                     <option value="" selected="selected" disabled="disabled">--select one--</option>
                     <optgroup label="Healthcare Practitioners and Technical Occupations:">
                       <option value="1">-  Chiropractor</option>
@@ -117,16 +132,30 @@ export default function RegThree() {
                       <option value="72">-  Not Applicable</option>
                     </optgroup>
                 </select>
-                <select>
+                <select onChange={changeHandler} value={skill} name='skill'>
                     <option value="" disabled="disabled">Skill Level</option>
                     <option value="">Expert</option>
                     <option value="">Proficient</option>
                     <option value="">Novice</option>
                 </select>
-                <input type="text" name="" id="" class="form-text" placeholder="Years of experience"></input>
+                <input 
+                  type="text"
+                  value={years}
+                  name="years" id=""
+                  onChange={changeHandler} 
+                  class="form-text" 
+                  placeholder="Years of experience"
+                  ></input>
                 <h4>Additional skills</h4>
                 <div id="add-sk">
-                    <input type="text" id="ski-text" placeholder="Add skills"></input>
+                    <input 
+                      type="text" 
+                      id="ski-text" 
+                      placeholder="Add skills"
+                      value={addSkills}
+                      name='addSkills'
+                      onChange={changeHandler}
+                    ></input>
                     <div id="skill-add">Add</div>
                 </div>
                 <div class="skills">
@@ -161,21 +190,39 @@ export default function RegThree() {
                 <input type="file" multiple="true" name="" id="file-upload"></input>
                 <div id="cert-div"></div>
                 <h4>Portfolio Link (optional)</h4>
-                <input type="url" name="" id="" class="form-text" placeholder="Enter full URL"></input>
+                <input 
+                  type="url" 
+                  name="url" id=""
+                  value={url}
+                  onChange={changeHandler} 
+                  class="form-text" 
+                  placeholder="Enter full URL"
+                ></input>
                 <h4>Social Media</h4>
-                <input type="url" name="" id="" class="form-text" placeholder="Enter full URL"></input>
+                <input 
+                  type="url" 
+                  name="url2" id=""
+                  value={url2}
+                  onChange={changeHandler} 
+                  class="form-text" 
+                  placeholder="Enter full URL"></input>
                 <div id="extra-url"></div>
                 <div class="form-innerdiv">
-                    <input type="url" name="" id="last-url" class="form-text" placeholder="Enter full URL"></input>
+                    <input 
+                      type="url" 
+                      name="url3"
+                      value={url3}
+                      onChange={changeHandler} 
+                      id="last-url" 
+                      class="form-text" 
+                      placeholder="Enter full URL"></input>
                     <div id="add-url">+</div>
                 </div>
                 <div id="next-but">
-                    <a href="">Back</a>
+                    <a href="#" onClick={()=>func(2)}>Back</a>
                     <div id="complete-but">Complete my registration</div>
                 </div>
             </form>
-        </div>
-      </div>
     </>
   )
 }

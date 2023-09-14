@@ -30,9 +30,9 @@ function App() {
         <Route path='/news' element={<News/>}/>
         <Route path='/howitworks' element={<HowItWorks />} />
         <Route path='/privacy' element={<Privacy />} />
-        <Route path="/regthree" element={<RegThree />} />
-        <Route path="/regtwo" element={<RegTwo />} />
-        <Route path="/regone" element={<RegOne />} />
+        {/* <Route path="/regthree" element={<RegThree />} /> */}
+        {/* <Route path="/regtwo" element={<RegTwo />} /> */}
+        <Route path="/reg" element={<RegOne />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/buyerreg" element={<BuyerReg />} />
         <Route path="/contact" element={<ContactUs />} />

@@ -110,6 +110,9 @@
     height: 1px;
     background-color: rgba(179, 177, 177, 0.849);
 }
+.prog-line.count-one,.prog-line.count-two,.prog-line.count-three{
+    background-color: #3ac3d6; 
+}
 .page-num{
     width: 35px;
     height: 35px;
@@ -120,15 +123,40 @@
     background-color: rgba(179, 177, 177, 0.849);
     border-radius: 50%;
 }
-#line-one{
+.page-num.count-one,.page-num.count-two,.page-num.count-three{
     background-color: #3ac3d6;
 }
-#line-two{
-    background: linear-gradient(90deg, #3ac3d6 50%, rgba(179, 177, 177, 0.849) 50%);
-}
-#pg-one{
+/* #line-one{
+    background-color: #3ac3d6; 
+    background-color: rgba(179, 177, 177, 0.849);
+} */
+/* #line-one#count-one{
     background-color: #3ac3d6;
+} */
+/* #line-two{
+     background: linear-gradient(90deg, #3ac3d6 50%, rgba(179, 177, 177, 0.849) 50%); 
+    background-color: rgba(179, 177, 177, 0.849);
+}*/ 
+/*  #line-three {
+    background: linear-gradient(90deg, #3ac3d6 50%, rgba(179, 177, 177, 0.849) 50%); 
+    background-color: rgba(179, 177, 177, 0.849);
+  }*/
+#line-four {
+    background-color: rgba(179, 177, 177, 0.849);
 }
+/*#pg-one{
+    background-color: #3ac3d6; 
+    background-color: rgba(179, 177, 177, 0.849);
+}*/
+
+/* #pg-two{
+     background-color: #3ac3d6; 
+    background-color: rgba(179, 177, 177, 0.849);
+}*/
+/* #pg-three{
+    background-color: #3ac3d6; 
+    background-color: rgba(179, 177, 177, 0.849);
+} */
 form{
     width: 100%;
     padding-left: 5%;
@@ -154,9 +182,9 @@ input:focus{
     display: flex;
     justify-content: space-between;
 }
-.type-number{
+/* .type-number{
     -moz-appearance: textfield;
-}
+} */
 .form-innerdiv input{
     width: 48%;
     padding: 12px 20px;

@@ -1,7 +1,45 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Navbar from '../Components/Navbar'
 import '../Styles/regOne.css'
+import RegTwo from './RegTwo';
+import RegThree from './RegThree';
 export default function RegOne() {
+    const [count, setCount] = useState(1);
+    const [formObj, setFormObj] = useState({
+        fullname : "",
+        email : "",
+        address1 : "",
+        address2: "",
+        state: "",
+        city: "",
+        phonenumber : "",
+        status: "",
+        zip: "",
+        country: "",
+        income: ""
+    })
+    const {fullname,email,address1,address2,state,city,phonenumber,status,zip,country,income} = formObj
+    function changeHandler(e){
+        const {name, value} = e.target;
+        setFormObj({
+            ...formObj,
+            [name] : value
+        })
+    }
+    function clickHandler(){
+        setCount((prev)=>{
+            if(prev <= 0){
+                return 1;
+            }
+            else if( prev >= 3){
+                return 3;
+            }
+            else{
+                return prev + 1;
+            }
+        })
+    }   
+
   return (
     <>
       <Navbar />
@@ -9,27 +47,79 @@ export default function RegOne() {
         <div id="form">
             <h2>Complete your registration</h2>
             <div id="page-progress">
-                <div class="prog-line" id="line-one"></div>
-                <div class="page-num" id="pg-one">1</div>
-                <div class="prog-line" id="line-two"></div>
-                <div class="page-num" id="pg-two">2</div>
-                <div class="prog-line" id="line-three"></div>
-                <div class="page-num" id="pg-three">3</div>
+                <div class={count >=1 ? "prog-line count-one" : "prog-line"} id="line-one"></div>
+                <div class={count >=1 ? "page-num count-one" : "page-num"} id="pg-one">1</div>
+                <div class={count >=2 ? "prog-line count-two" : "prog-line"} id="line-two"></div>
+                <div class={count >=2 ? "page-num count-two" :"page-num"} id="pg-two">2</div>
+                <div class={count >=3 ? "prog-line count-three" : "prog-line"} id="line-three"></div>
+                <div class={count >=3 ? "page-num count-three" :"page-num"} id="pg-three">3</div>
                 <div class="prog-line" id="line-four"></div>
             </div>
+            { count == 1
+            ?
             <form action="">
                 <h4>Basic Info</h4>
-                <input type="text" name="" id="" class="form-text" placeholder="Full name"/>
-                <input type="email" name="" id="" class="form-text" placeholder="Email address"/>
-                <input type="text" name="" id="" class="form-text" placeholder="Residential address 1"/>
-                <input type="text" name="" id="" class="form-text" placeholder="Residential address 2"/>
+                <input 
+                    type="text" 
+                    name="fullname" 
+                    id="" 
+                    class="form-text" 
+                    placeholder="Full name"
+                    value={fullname}                 
+                    onChange={changeHandler}
+                />
+                <input 
+                    type="email" 
+                    name="email" id="" 
+                    class="form-text" 
+                    placeholder="Email address"
+                    value={email}
+                    onChange={changeHandler}
+                />
+                <input 
+                    type="text" 
+                    name="address1" 
+                    id="" 
+                    class="form-text" 
+                    placeholder="Residential address 1"
+                    value={address1}
+                    onChange={changeHandler}
+                />
+                <input 
+                    type="text" 
+                    name="address2" 
+                    id="" 
+                    class="form-text" 
+                    placeholder="Residential address 2"
+                    value={address2}
+                    onChange={changeHandler}
+                    />
                 <div class="form-innerdiv">
-                    <input type="text" name="" id="" placeholder="city"/>
-                    <input type="text" name="" id="" placeholder="state"/>
+                    <input 
+                        type="text" 
+                        name="city"
+                        value={city}
+                        onChange={changeHandler} 
+                        id="" 
+                        placeholder="city"/>
+                    <input 
+                        type="text" 
+                        name="state"
+                        value={state}
+                        onChange={changeHandler} 
+                        id="" 
+                        placeholder="state"/>
                 </div>
                 <div class="form-innerdiv">
-                    <input type="number" name="" id="" class="type-number" placeholder="zipcode"/>
-                    <select name="" id="">
+                    <input 
+                        type="number" 
+                        name="zip" id=""
+                        value={zip}
+                        onChange={changeHandler} 
+                        class="type-number" 
+                        placeholder="zipcode"
+                    />
+                    <select name="country" value={country} onChange={changeHandler} id="">
                         <option value="  " selected>Country</option>
                         <option value="--">Not Specified</option>
                         <option value="AF">Afghanistan</option>
@@ -273,17 +363,41 @@ export default function RegOne() {
                         <option value="ZW">Zimbabwe</option>
                     </select>
                 </div>
-                <input type="tel" name="" id="" class="form-text" placeholder="Phone number"/>
-                <select id="mar-status">
+                <input 
+                    type="tel" 
+                    name="phonenumber"
+                    value={phonenumber}
+                    onChange={changeHandler} 
+                    id="" 
+                    class="form-text" 
+                    placeholder="Phone number"/>
+                <select id="mar-status" name='status' value={status} onChange={changeHandler}>
                     <option value="Marital status">Marital status</option>
                     <option value="single">single</option>
                     <option value="married">married</option>
                 </select>
-                <input type="text" name="" id="" class="form-text" placeholder="Monthly income"/>
+                <input 
+                    type="text" 
+                    name="income" id=""
+                    value={income}
+                    onChange={changeHandler} 
+                    class="form-text" 
+                    placeholder="Monthly income"
+                />
                 <div id="next-but">
-                    <input type="submit" name="" id="next-page" value="Next"/>
+                    <input 
+                        type="submit" 
+                        name="" 
+                        id="next-page" 
+                        value="Next"
+                        onClick={()=>{setCount(2)}}
+                    />
                 </div>
             </form>
+            : count == 2
+            ? <RegTwo func={setCount} />
+            : <RegThree func={setCount} />
+            }
         </div>
     </div>      
     </>

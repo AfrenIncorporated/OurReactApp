@@ -1,28 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Components/Navbar'
 import '../Styles/regTwo.css'
-export default function RegTwo() {
+export default function RegTwo({func}) {
+    const [formObj2, setFormObj2] = useState({
+        schoolName : "",
+        schoolAddress : "",
+        country : "",
+        schoolEmail: "",
+        month : "",
+        month2 : "",
+        year : "",
+        educationalLevel : ""
+    })
+    const {
+        schoolName,
+        schoolAddress,
+        country,
+        schoolEmail,month,month2,year,educationalLevel} = formObj2
+
+    function changeHandler(e){
+        const {name,value} = e.target;
+        setFormObj2({
+            ...formObj2,
+            [name] : value
+        })
+    }
   return (
     <>
-      <Navbar />
-      <div id="form-cover">
-        <div id="form">
-            <h2>Complete your registration</h2>
-            <div id="page-progress">
-                <div class="prog-line" id="line-one"></div>
-                <div class="page-num" id="pg-one">1</div>
-                <div class="prog-line" id="line-two"></div>
-                <div class="page-num" id="pg-two">2</div>
-                <div class="prog-line" id="line-three"></div>
-                <div class="page-num" id="pg-three">3</div>
-                <div class="prog-line" id="line-four"></div>
-            </div>
             <form action="">
                 <h4>Educational Info</h4>
-                <input type="text" name="" id="" class="form-text" placeholder="School name"/>
+                <input 
+                    type="text" 
+                    name="schoolName"
+                    value={schoolName}
+                    onChange={changeHandler} 
+                    id="" 
+                    class="form-text" 
+                    placeholder="School name"/>
                 <div class="form-innerdiv">
-                    <input type="text" name="" id="" placeholder="School address"/>
-                    <select name="" id="">
+                    <input 
+                        type="text" 
+                        name="schoolAddress" id=""
+                        value={schoolAddress}
+                        onChange={changeHandler} 
+                        placeholder="School address"/>
+                    <select name="country" value={country} onChange={changeHandler} id="">
                         <option value="  " selected>Country</option>
                         <option value="--">Not Specified</option>
                         <option value="AF">Afghanistan</option>
@@ -266,10 +288,17 @@ export default function RegTwo() {
                         <option value="ZW">Zimbabwe</option>
                     </select>
                 </div>
-                <input type="email" name="" id="" class="form-text" placeholder="School email"/>
+                <input 
+                    type="email" 
+                    name="schoolEmail" id=""
+                    value={schoolEmail}
+                    onChange={changeHandler} 
+                    class="form-text" 
+                    placeholder="School email"
+                />
                 <h4>Start date</h4>
                 <div class="form-innerdiv">
-                    <select id="">
+                    <select id="" name='month2' value={month2} onChange={changeHandler}>
                         <option value="">month</option>
                         <option value="01">January</option>
                         <option value="02">February</option>
@@ -284,7 +313,7 @@ export default function RegTwo() {
                         <option value="11">November</option>
                         <option value="12">December</option>
                     </select>
-                    <select id="">
+                    <select id="" name='year' value={year} onChange={changeHandler}>
                         <option value="">year</option>
                         <option value="1940">1940</option>
                         <option value="1941">1941</option>
@@ -374,7 +403,7 @@ export default function RegTwo() {
                 </div>
                 <h4>End date</h4>
                 <div class="form-innerdiv">
-                    <select id="">
+                    <select id="" name='month' value={month} onChange={changeHandler}>
                         <option value="">month</option>
                         <option value="01">January</option>
                         <option value="02">February</option>
@@ -477,16 +506,28 @@ export default function RegTwo() {
                         <option value="2023">2023</option>
                     </select>
                 </div>
-                <input type="text" name="" id="" class="form-text" placeholder="Educational level"/>
+                <input 
+                    type="text" 
+                    name="educationalLevel"
+                    value={educationalLevel} id=""
+                    onChange={changeHandler} 
+                    class="form-text" 
+                    placeholder="Educational level"
+
+                />
                 <div id="extra-url"></div>
                 <div id="edu-add">Add Education</div>
                 <div id="next-but">
-                    <a href="register-one.html">Back</a>
-                    <input type="submit" name="" id="next-page" value="Next"/>
+                    <a href="#" onClick={()=>func(1)}>Back</a>
+                    <input 
+                        type="submit" 
+                        name="" 
+                        id="next-page" 
+                        value="Next"
+                        onClick={()=>func(3)}
+                    />
                 </div>
             </form>
-        </div>
-    </div>
     </>
   )
 }
