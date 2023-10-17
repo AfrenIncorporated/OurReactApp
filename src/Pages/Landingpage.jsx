@@ -51,7 +51,7 @@ export default function Landingpage() {
   return (
     <>
         <Navbar />
-        <header>
+        <header className='landingpage'>
         <div className="award-description">
             <img src={medal} alt=""/>
             <p ref={contentRef} className="typr"></p>
@@ -66,10 +66,10 @@ export default function Landingpage() {
             Work with the best freelance talent from around the world on our secure,
             flexible and cost-effective platform.
         </p>
-        <div className="search-space">
+        <div className="search-space2">
             <div className="search-bar">
                 <img src={search} alt=""/>
-                <input type="text" placeholder="search"/>
+                <input type="text" placeholder="search" className='landingpg-input'/>
             </div>
             <select name="" id="">
                 <option value="">Talent</option>
@@ -239,24 +239,24 @@ export default function Landingpage() {
                 Access on-demand workforce that covers a wide range of sought after skills and specialties
             </p>
         </div>
-        <main>
-            <div>
-                <a className="main-links" href="#">Software Development</a>
+        <main className='landingpage-main'>
+            <div className='landingpage-div'>
+                <a className="main-links" href="javascript:viod(0)">Software Development</a>
             </div>
             <div>
-                <a className="main-links" href="#">UI/UX (Product Design)</a>
+                <a className="main-links" href="javascript:viod(0)">UI/UX (Product Design)</a>
             </div>
             <div>
-                <a className="main-links" href="#">Data Analysis</a>
+                <a className="main-links" href="javascript:viod(0)">Data Analysis</a>
             </div>
             <div>
-                <a className="main-links" href="#">Music Production</a>
+                <a className="main-links" href="javascript:viod(0)">Music Production</a>
             </div>
             <div>
-                <a className="main-links" href="#">Animation</a>
+                <a className="main-links" href="javascript:viod(0)">Animation</a>
             </div>
             <div>
-                <a className="main-links" href="#">Video Editing</a>
+                <a className="main-links" href="javascript:viod(0)">Video Editing</a>
             </div>
         </main>
         <a href="#" className="view-all">

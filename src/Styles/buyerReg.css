@@ -7,7 +7,7 @@
     font-family: Quicksand;
     box-sizing: border-box;
 }
-.nav {
+/* .nav {
     position: sticky;
     top: 0;
     left: 0;
@@ -83,7 +83,8 @@
     display: flex;
     margin-left: 20%;
     column-gap: 10px;
-}
+} */
+
 #form-cover{
     display: flex;
     justify-content: center;
@@ -94,8 +95,9 @@
     box-shadow: 0px 0px 10px 1px #d4d4d4;
     padding: 20px;
     border-radius: 10px;
+    margin-top: 20px;
 }
-form{
+form.buyerreg{
     width: 100%;
     text-align: start;
     box-sizing: border-box;
@@ -205,19 +207,19 @@ input:focus{
     justify-content: right;
 }
 @media (max-width: 1292px){
-    #nav-buttons{
+    /* #nav-buttons{
         margin-left: 10%;
-    }
+    } */
 }
 @media (max-width: 1178px){
-    #nav-buttons{
+    /* #nav-buttons{
         margin-left: 5%;
-    }
+    }  */
 }
 @media (max-width: 1120px){
-    .nav {
+    /* .nav {
         padding: 15px 40px;
-    }
+    } */
 }
 @media (max-width: 1018px){
     #form-buyer{
@@ -225,45 +227,45 @@ input:focus{
     }
 }
 @media (max-width: 1070px){
-    #nav-buttons{
+    /* #nav-buttons{
         margin-left: 3%;
     }
     .nav-links {
         column-gap: 30px;
-    }
+    } */
 }
 @media (max-width: 980px){
-    .nav {
+    /* .nav {
         padding: 15px 30px;
-    }
+    } */
 }
 @media (max-width: 944px){
-    .nav {
+    /* .nav {
         padding: 15px 20px;
-    }
+    } */
     .logo {
         font-size: 22px;
         font-weight: 500;
     }
-    .nav-links {
+    /* .nav-links {
         column-gap: 22px;
-    }
+    } */
 }
 @media (max-width: 878px){
-    .nav-links {
+    /* .nav-links {
         column-gap: 17px;
     }
     #nav-buttons{
         margin-left: 1%;
-    }
+    } */
 }
 @media (max-width: 848px){
-    #si-innav{
+    /* #si-innav{
         padding: 5px 10px;
     }
     #start-navbut{
         padding: 5px 16px;
-    }
+    } */
 }
 @media (max-width: 842px){
     #form-buyer{
@@ -271,10 +273,10 @@ input:focus{
     }
 }
 @media (max-width: 810px){
-    #nav-buttons{
+    /* #nav-buttons{
         margin-left: 0;
-    }
-    #si-innav{
+    } */
+    /* #si-innav{
         padding: 5px 5px;
         font-size: 11px;
     }
@@ -284,21 +286,21 @@ input:focus{
     }
     .nav-links{
         font-size: 12px;
-    }
+    } */
 }
 @media (max-width: 746px){
-    .navOpenBtn, .navCloseBtn, #searchIcon {
+    /* .navOpenBtn, .navCloseBtn, #searchIcon {
         display: block;
-    }
+    } */
     .search-box{
         display: flex;
     }
-    #nav-buttons{
+    /* #nav-buttons{
         display: none;
     }
     .nav {
         padding: 10px 20px;
-    }
+    } */
     #overflow{
         position: fixed;
         width: 100%;
@@ -310,7 +312,7 @@ input:focus{
         opacity: 0;
         transition: all 0.2s;
     }
-    .nav .nav-links {
+    /* .nav .nav-links {
         align-items: unset;
         position: absolute;
         right: 0;
@@ -412,7 +414,6 @@ input:focus{
         text-align: center;
     }
     #drp-nav-but a{
-        /* color: #015b7e; */
         text-align: center;
         display: flex;
         justify-content: center;
@@ -420,8 +421,6 @@ input:focus{
         font-size: 12px;
         height: 40px;
         width: 100%;
-        /* background-color: #015b7e; */
-        /* color: white; */
         border: solid 1px white;
         border-radius: 5px;
         margin-bottom: 20px;
@@ -454,7 +453,7 @@ input:focus{
     }
     .openDropThree #drp-cont-three{
         display: block;
-    }
+    } */
 }
 @media (max-width: 626px){
     #form-buyer{
@@ -483,7 +482,7 @@ input:focus{
     #form-buyer h4{
         font-size: 15px;
     }
-    form p{
+    form.buyerreg p{
         font-size: 14px;
     }
 }
@@ -491,9 +490,9 @@ input:focus{
     .search-box input {
         width: 85%;
     }
-    .nav .navOpenBtn {
+    /* .nav .navOpenBtn {
         left: 92%;
-    }
+    } */
     #searchIcon{
         left: 85%;
     }

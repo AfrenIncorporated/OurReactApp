@@ -12,21 +12,19 @@
     height: 600px;
     background-image: linear-gradient(#e4f4fa5d, #E4F4FA), url(../assets/afren-images/eloe\ 4.png);
     background-size: cover;
-    /* background-blend-mode: multiply; */
-    /* background-image: linear-gradient(#E4F4FA00, #E4F4FA); */
 }
 #testim-wrap{
     width: 100%;
     display: flex;
     justify-content: center;
 }
-#testim-tag{
+#contact-testim-tag{
     width: 100px;
     color: white;
     background-color: #015B7E;
     text-align: center;
     border-radius: 12px;
-    margin-top: 100px;
+    margin-top: 33.33px;
     margin-bottom: 30px;
     padding: 3px 0;
     font-size: 13px;
@@ -149,9 +147,9 @@
         padding: 20px 40px;
         width: 80%;
     }
-    #testim-tag{
+    #contact-testim-tag{
         width: 100px;
-        margin-top: 80px;
+        margin-top: 33.33px;
         margin-bottom: 30px;
     }
     #centered-text{
@@ -186,7 +184,7 @@
         padding: 20px 40px;
         width: 90%;
     }
-    #testim-tag{
+    #contact-testim-tag{
         width: 100px;
         margin-top: 70px;
         margin-bottom: 20px;
@@ -229,7 +227,7 @@
         row-gap: 10px;
         padding-left: 0;
     }
-    #testim-tag{
+    #contact-testim-tag{
         margin-bottom: 10px;
     }
 }

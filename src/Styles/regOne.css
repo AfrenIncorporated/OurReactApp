@@ -107,7 +107,7 @@
 
 .prog-line{
     width: 20%;
-    height: 1px;
+    height: 2px;
     background-color: rgba(179, 177, 177, 0.849);
 }
 .prog-line.count-one,.prog-line.count-two,.prog-line.count-three{
@@ -157,7 +157,7 @@
     background-color: #3ac3d6; 
     background-color: rgba(179, 177, 177, 0.849);
 } */
-form{
+form.regone{
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
@@ -479,7 +479,7 @@ input:focus{
     #form h2{
         font-size: 22px;
     }
-    form h4{
+    form.regone h4{
         font-size: 16px;
     }
 }
@@ -522,7 +522,7 @@ input:focus{
     #form h2{
         font-size: 20px;
     }
-    form h4{
+    form.regone h4{
         font-size: 14px;
     }
     #next-page{

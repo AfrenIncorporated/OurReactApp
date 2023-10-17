@@ -33,7 +33,7 @@ export default function RegThree({func}) {
 
   return (
     <>
-            <form action="">
+            <form className='regthree' action="">
                 <h4>Professional Info</h4>
                 <select onChange={changeHandler} value={occupation} name={occupation} class="form-control dropdown" id="occupation">
                     <option value="" selected="selected" disabled="disabled">--select one--</option>
@@ -159,11 +159,11 @@ export default function RegThree({func}) {
                     <div id="skill-add">Add</div>
                 </div>
                 <div class="skills">
-                    <section>
+                    <section className='skills-section'>
                         <p>Selected Skills</p>
                         <div class="select s1" id="selected"></div>
                     </section>
-                    <section>
+                    <section className='skills-section'>
                         <p>Popular Skills</p>
                         <div class="select s2" id="popular-sk">
                             <div class="skill pl">

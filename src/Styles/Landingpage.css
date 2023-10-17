@@ -1,7 +1,6 @@
-header {
+header.landingpage {
     width: 100%;
     height: fit-content;
-    /* background-color: red; */
     padding-top: 100px;
     background-image: url("../afren-images/header-bg.png");
     background-repeat: no-repeat;
@@ -49,7 +48,7 @@ header {
     color: var(--grey-inactive2);
 }
 
-.search-space {
+.search-space2 {
     display: flex;
     width: 50%;
     height: 50px;
@@ -67,7 +66,7 @@ header {
     padding-left: 30px;
 }
 
-.search-bar input {
+.search-bar input.landingpg-input {
     display: block;
     height: 100%;
     outline: none;
@@ -77,9 +76,10 @@ header {
     font-size: 1.1rem;
     width: 80%;
     color: var(--grey-inactive2);
+    border-radius: 0;
 }
 
-.search-space select {
+.search-space2 select {
     display: block;
     color: var(--white-bckg-color);
     background-color: var(--blue2);
@@ -302,7 +302,7 @@ main {
     margin-bottom: 50px;
 }
 
-main div {
+main.landingpage-main div {
     display: flex;
     align-items: end;
     width: 31%;
@@ -314,11 +314,11 @@ main div {
     overflow: hidden;
 }
 
-main div:hover .main-links {
+main.landingpage-main div:hover .main-links {
     height: 100%;
 }
 
-main div a {
+main.landingpage-main div a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,19 +332,19 @@ main div a {
     transition: all .9s;
 }
 
-main div:nth-of-type(1) {
+main.landingpage-main div.landingpage-div {
     background-image: url("../assets/afren-images/networking-unsplash.jpg");
 }
-main div:nth-of-type(2) {
+main.landingpage-main div:nth-of-type(2) {
     background-image: url("../assets/afren-images/cabling.jpg");
 }
-main div:nth-of-type(3) {
+main.landingpage-main div:nth-of-type(3) {
     background-image: url("../assets/afren-images/blake-wisz-tE6th1h6Bfk-unsplash.jpg");
 }
-main div:nth-of-type(4) {
+main.landingpage-main div:nth-of-type(4) {
     background-image: url("../assets/afren-images/digital-signage.jpg");
 }
-main div:nth-of-type(5) {
+main.landingpage-main div:nth-of-type(5) {
     background-image: url("../assets/afren-images/working-pc.png");
 }
 main div:nth-of-type(6) {
@@ -530,7 +530,7 @@ main div:nth-of-type(6) {
         background-color: rgb(124, 123, 123);
     } */
 
-    main div {
+    main.landingpage-main div {
         width: 400px;
     }
 
@@ -560,7 +560,7 @@ main div:nth-of-type(6) {
     .main-text {
         padding: 0 35px;
     }
-    main div {
+    main.landingpage-main div {
         width: 300px;
     }
 
@@ -571,7 +571,7 @@ main div:nth-of-type(6) {
         background-color: red;
     } */
 
-    .search-space select {
+    .search-space2 select {
         min-width: 100px;
     }
 
@@ -589,7 +589,7 @@ main div:nth-of-type(6) {
         width: 90%;
         margin: 40px auto 0 auto;
     }
-    main {
+    main.landingpage-main {
         padding: 0 20px;
     }
 
@@ -600,7 +600,7 @@ main div:nth-of-type(6) {
         background-color: red;
     } */
 
-    .search-space {
+    .search-space2 {
         display: none;
     }
 
@@ -662,7 +662,7 @@ main div:nth-of-type(6) {
         margin: 40px auto 0 auto;
     }
 
-    .search-space {
+    .search-space2 {
         width: 80%;
     }
 
@@ -674,7 +674,7 @@ main div:nth-of-type(6) {
         width: 80%;
     }
 
-    main div {
+    main.landingpage-main div {
         width: 400px;
     }
     
@@ -760,12 +760,12 @@ main div:nth-of-type(6) {
         padding: 0 10px;
     }
 
-    main {
+    main.landingpage-main {
         padding: 0 10px;
         gap: 20px;
     }
 
-    main div {
+    main.landingpage-main div {
         width: 100%;
     }
     .header-description-text1,
@@ -784,7 +784,7 @@ main div:nth-of-type(6) {
         width: 100%;
     }
 
-    main div:nth-of-type(6) {
+    main.landingpage-main div:nth-of-type(6) {
         display: none;
     }
     
@@ -795,7 +795,7 @@ main div:nth-of-type(6) {
     /* body {
         background-color: #d4ebf5;
     } */
-    header {
+    header.landingpage {
         padding-top: 70px;
     }
 

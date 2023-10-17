@@ -2,8 +2,10 @@ import React,{useState,useRef} from 'react'
 import '../Styles/Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark,faCaretDown,faMagnifyingGlass,faBars } from '@fortawesome/free-solid-svg-icons'
+import { NavLink,useNavigate } from 'react-router-dom'
 
 export default function Header() {
+    const navigate = useNavigate()
     const [isSidebarOpen,setSidebarOpen] = useState(false)
     const [isMenuOneOpen, setMenuOneOpen] = useState(false);
     const [isMenuTwoOpen, setMenuTwoOpen] = useState(false);
@@ -41,32 +43,29 @@ export default function Header() {
   return (
     <nav className={
             !isSidebarOpen && !isSearchbarOpen 
-            ? "nav"
+            ? "nav1"
             :  !isSidebarOpen && isSearchbarOpen
-            ? "nav openSearch"
+            ? "nav1 openSearch"
             :  isSidebarOpen && isMenuOneOpen
-            ? "nav openNav openDrop"
+            ? "nav1 openNav openDrop"
             :  isSidebarOpen && isMenuTwoOpen
-            ? "nav openNav openDropTwo"
+            ? "nav1 openNav openDropTwo"
             : isSidebarOpen && isMenuThreeOpen
-            ? "nav openNav openDropThree"
-            : "nav openNav"}>
-        <a href="#" className="logo"><span style={{color: "#3ac3d6"}}>af</span><span style={{color: "#015b7e"}}>ren</span></a>
+            ? "nav1 openNav openDropThree"
+            : "nav1 openNav"}>
+        <NavLink to="/" className="logo"><span style={{color: "#3ac3d6"}}>af</span><span style={{color: "#015b7e"}}>ren</span></NavLink>
         <div id="overflow">
             <ul className="nav-links">
                 <FontAwesomeIcon icon={faXmark} onClick={clickHandler2} className="navCloseBtn" />
                 {/* <i className="fa fa-times navCloseBtn"></i> */}
                 <li><a href="">Find Talent</a></li>
                 <li className="dropdown">
+                    <NavLink to="/jobs">
                     <p className="dropbtn" onClick={clickHandler3} id="droptn-one">Find Work 
                         {/* <i className="fas fa-caret-down"></i> */}
-                        <FontAwesomeIcon icon={faCaretDown} />
+                        {/* <FontAwesomeIcon icon={faCaretDown} /> */}
                     </p>
-                    <div className="dropdown-content" id="drp-cont-one">
-                        <a href="#">list</a>
-                        <a href="#">list</a>
-                        <a href="#">list</a>
-                    </div>
+                    </NavLink>
                 </li>
                 <li className="dropdown">
                     <p className="dropbtn" onClick={clickHandler4} id="droptn-two">Resources 
@@ -74,9 +73,10 @@ export default function Header() {
                         <FontAwesomeIcon icon={faCaretDown} />
                     </p>
                     <div className="dropdown-content" id="drp-cont-two">
-                        <a href="#">list</a>
-                        <a href="#">list</a>
-                        <a href="#">list</a>
+                        <NavLink to="/blog">Blog</NavLink>
+                        <NavLink to="/news">News</NavLink>
+                        <NavLink to="/testimonails">Testimonials</NavLink>
+                        <NavLink to="/contact">contact</NavLink>
                     </div>
                 </li>
                 <li className="dropdown">
@@ -90,7 +90,7 @@ export default function Header() {
                         <a href="#">list</a>
                     </div>
                 </li>
-                <li><a href="">About</a></li>
+                <li><NavLink to="/about">About</NavLink></li>
                 <div id="drp-nav-but">
                     <a href="" id="drp-strt-butt" className="butt-in-nav">Get Started</a>
                     <a href="" id="drp-sign-butt" className="butt-in-nav">Sign in</a>
@@ -100,8 +100,8 @@ export default function Header() {
             </ul>
         </div>
         <div id="nav-buttons">
-            <a href="" id="si-innav">Sign in</a>
-            <a href="" id="start-navbut">Get Started</a>
+            <NavLink to="/login" id="si-innav">Sign in</NavLink>
+            <NavLink to="/signup" id="start-navbut">Get Started</NavLink>
         </div>
         {/* <i className="fa fa-search search-icon" id="searchIcon"></i> */}
         <FontAwesomeIcon onClick={clickHandler6} icon={!isSearchbarOpen ? faMagnifyingGlass : faXmark} className='search-icon' id="searchIcon" />

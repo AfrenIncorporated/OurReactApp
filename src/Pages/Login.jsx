@@ -5,6 +5,8 @@ import logo from '../assets/afren-images/afren-logo.png'
 import googleIcon from '../assets/afren-images/google-icon.png'
 import pinkRoundImg from '../assets/afren-images/pink-roung-img.png'
 import verified from '../assets/afren-images/verified.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Login() {
@@ -26,10 +28,11 @@ export default function Login() {
             <div className="email">
               <input type="email" id="email" placeholder="Email address" />
             </div>
-            <div className="password">
+            <div className="password2">
               <input type="password" id="password" placeholder="Password" />
               <figure>
-                <i className="fa-regular fa-eye"></i>
+                {/* <i className="fa-regular fa-eye"></i> */}
+                <FontAwesomeIcon icon={faEye} size="s" style={{color: "#000000", fontWeight: 400 }} />
                 <span id="sp"></span>
               </figure>
             </div>
@@ -43,7 +46,7 @@ export default function Login() {
               </a>
             </div>
             <input type="submit" value="Log in" />
-            <div className="or">
+            <div className="or2">
               <div className="line"></div>
               <h6>OR</h6>
               <div className="line"></div>
@@ -66,7 +69,7 @@ export default function Login() {
             Lorem ipsum dolor sit amet consectetur. Sit dui dolor morbi enim
             arcu ipsum venenatis.
           </p>
-          <div className="wrapper">
+          <div className="wrapper2">
             <h1>See what our clients are saying</h1>
             <div className="outer">
               <div className="card" style={{"--delay":-1}}>

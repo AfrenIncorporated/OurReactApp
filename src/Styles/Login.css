@@ -49,7 +49,7 @@ a {
     /* background-color: red; */
 }
 
-.password{
+.password2{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -58,11 +58,11 @@ a {
     padding-right: 20px;
 }
 
-.password:focus {
+.password2:focus {
     outline-width: 2px;
 }
 
-.password input {
+.password2 input {
     display: block;
     border: none;
     outline: none;
@@ -70,7 +70,7 @@ a {
     height: 40px;
 }
 
-.password figure span {
+.password2 figure span {
     display: block;
     width: 20px;
     height: 2px;
@@ -190,7 +190,7 @@ input[type="submit"]:hover{
     color: var(--blue2);
 }
 
-.or{
+.or2{
     display: flex;
     align-items: center;
     color: var(--grey-inactive2);
@@ -246,12 +246,12 @@ input[type="submit"]:hover{
     margin-bottom: 10px;
 }
 
-.wrapper{
+.wrapper2{
     width: 100%;
     background-color: transparent;
     text-align: center;
 }
-.wrapper h1{
+.wrapper2 h1{
     color: #015B7E;
     margin-top: 50px;
 }
@@ -280,7 +280,7 @@ input[type="submit"]:hover{
 .outer:hover .card{
     animation-play-state: paused;
 }
-.wrapper .card:last-child{
+.wrapper2 .card:last-child{
     animation-delay: calc(-3s * var(--delay));
 }
 @keyframes animate {

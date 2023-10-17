@@ -57,7 +57,7 @@ export default function RegOne() {
             </div>
             { count == 1
             ?
-            <form action="">
+            <form className='regone' action="">
                 <h4>Basic Info</h4>
                 <input 
                     type="text" 

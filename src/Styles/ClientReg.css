@@ -82,18 +82,20 @@
     margin-left: 20%;
     column-gap: 10px;
 }
-#form-cover{
+#client-reg-form-cover{
     display: flex;
     justify-content: center;
     margin-top: 80px;
 }
-#form{
+#client-reg-form{
     width: 50%;
     text-align: center;
     box-shadow: 0px 0px 10px 1px #d4d4d4;
     padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
-form{
+form.clientreg{
     width: 100%;
     text-align: start;
     box-sizing: border-box;
@@ -218,7 +220,7 @@ input:focus{
     }
 }
 @media (max-width: 1018px){
-    #form{
+    #client-reg-form{
         width: 70%;
     }
 }
@@ -264,7 +266,7 @@ input:focus{
     }
 }
 @media (max-width: 842px){
-    #form{
+    #client-reg-form{
         width: 80%;
     }
 }
@@ -455,7 +457,7 @@ input:focus{
     }
 }
 @media (max-width: 626px){
-    #form{
+    #client-reg-form{
         width: 100%;
     }
 }
@@ -474,13 +476,13 @@ input:focus{
         width: 25px;
         height: 25px;
     }
-    #form h2{
+    #client-reg-form h2{
         font-size: 20px;
     }
-    #form h4{
+    #client-reg-form h4{
         font-size: 15px;
     }
-    form p{
+    form.clientreg p{
         font-size: 14px;
     }
 }
@@ -498,7 +500,7 @@ input:focus{
     }
 }
 @media (max-width: 344px){
-    #form h2{
+    #client-reg-form h2{
         font-size: 16px;
     }
     #complete-but{
@@ -506,13 +508,13 @@ input:focus{
     }
 }
 @media (max-width: 306px){
-    #form h4{
+    #client-reg-form h4{
         font-size: 13px;
     }
-    #form input{
+    #client-reg-form input{
         padding: 8px 20px;
     }
-    #form select{
+    #client-reg-form select{
         padding: 8px 20px;
     }
 }

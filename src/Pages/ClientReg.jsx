@@ -7,10 +7,10 @@ export default function ClientReg() {
   return (
     <>
       <Header/>
-      <div id="form-cover">
-        <div id="form">
+      <div id="client-reg-form-cover">
+        <div id="client-reg-form">
             <h2>Registration page</h2>
-            <form action="">
+            <form className="clientreg" action="">
                 <p>Basic Info</p>
                 <input type="text" name="" id="" class="form-text" placeholder="Company name"/>
                 <input type="email" name="" id="" class="form-text" placeholder="Company email"/>

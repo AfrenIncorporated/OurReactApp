@@ -11,7 +11,7 @@
     color: #015B7E;
     display: flex;
     justify-content: center;
-    padding: 6rem 0 1rem 0;
+    padding: 1.5rem 0 1rem 0;
     margin: 0 3rem;
     border-radius: 0 0 30px 30px;
 }
@@ -24,13 +24,13 @@
     justify-content: space-between;
     padding: 0.5rem 3rem;
 }
-#side-menu{
+#privacy-side-menu{
     width: 20%;
     border: 1px solid #D8F3FE;
     padding-top: 3rem;
     border-radius: 0 25px 25px 0;
 }
-#side-menu a{
+#privacy-side-menu a{
     text-decoration: none;
     color: #808080;
 }
@@ -58,13 +58,13 @@
     background-color: #015B7E;
     left: 0;
 }
-#right-whole{
+#signup-right-whole{
     width: 75%;
     padding: 3rem;
     border: 1px solid #D8F3FE;
     border-radius: 20px 0 0 20px;
 }
-#right-whole div{
+#signup-right-whole div{
     display: flex;
     margin-bottom: 15px;
     color: #015B7E;
@@ -74,7 +74,7 @@
     color: #015B7E;
     font-size: 7px;
 }
-#right-whole div a{
+#signup-right-whole div a{
     text-decoration: none;
     color: #015B7E;
 }
@@ -103,10 +103,10 @@
     .nav-links {
         column-gap: 22px;
     }*/
-    #side-menu{
+    #privacy-side-menu{
         width: 30%;
     } 
-    #right-whole{
+    #signup-right-whole{
         width: 65%;
     }
     #top-item-inner{
@@ -144,7 +144,7 @@
     .nav-links{
         font-size: 12px;
     } */
-    #right-whole{
+    #signup-right-whole{
         padding: 1.5rem;
     } 
 } 
@@ -157,15 +157,15 @@
     }
 }
 @media (max-width: 681px){
-    #right-whole{
+    #signup-right-whole{
         width: 68%;
     }
 }
 @media (max-width: 665px){
-    #side-menu{
+    #privacy-side-menu{
         display: none;
     }
-    #right-whole{
+    #signup-right-whole{
         width: 100%;
         border: none;
         padding: 2rem;
@@ -189,7 +189,7 @@
         font-size: 22px;
     } 
 }
-/* @media (max-width: 444px){
+ @media (max-width: 444px){
     .search-box input {
         width: 85%;
     }
@@ -202,7 +202,7 @@
     #top-item{
         margin: 0 1rem;
     }
-    #right-whole{
+    #signup-right-whole{
         padding: 1rem;
     }
-} */
+} 

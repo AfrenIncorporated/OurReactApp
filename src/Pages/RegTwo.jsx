@@ -27,7 +27,7 @@ export default function RegTwo({func}) {
     }
   return (
     <>
-            <form action="">
+            <form className='regtwo' action="">
                 <h4>Educational Info</h4>
                 <input 
                     type="text" 

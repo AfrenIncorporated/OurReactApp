@@ -134,7 +134,7 @@
 #pg-two{
     background-color: #3ac3d6;
 }*/
-form{
+form.regtwo{
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
@@ -496,7 +496,7 @@ input:focus{
     #form h4{
         font-size: 15px;
     }
-    form p{
+    form.regtwo p{
         font-size: 14px;
     }
     #next-page{

@@ -18,6 +18,23 @@
     /* background-color: blue; */
     display: flex;
 }
+.password svg{
+    color: #575555;
+    cursor: pointer;
+    position: relative;
+}
+div.password-icon-container{
+    position: relative;
+}
+span.slant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    width: 100%;
+    height: 2px;
+    background-color: #575555;
+}
 #left{
     width: 60%;
     display: flex;
@@ -48,12 +65,12 @@
 input:focus{
     outline: none;
 }
-.form-innerdiv{
+.signup-form-innerdiv{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.form-innerdiv input{
+.signup-form-innerdiv input{
     width: 48%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -142,26 +159,26 @@ input:focus{
     padding: 0 5%;
     box-sizing: border-box;
 }
-.wrapper{
+.signup-wrapper{
     width: 100%;
     /* height: 100%; */
     /* background-color: white; */
     text-align: center;
     margin-top: 150px;
 }
-.wrapper h2{
+.signup-wrapper h2{
     color: #015B7E;
     margin: 0;
     font-size: 20px;
 }
-.wrapper p{
+.signup-wrapper p{
     margin: 0;
     font-size: 13px;
 }
 #right-text{
     color: #015B7E;
 }
-.outer{
+.signup-outer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,10 +201,10 @@ input:focus{
     font-size: 13px;
     margin: 0;
 }
-.outer:hover .card{
+.signup-outer:hover .card{
     animation-play-state: paused;
 }
-.wrapper .card:last-child{
+.signup-wrapper .card:last-child{
     animation-delay: calc(-3s * var(--delay));
 }
 @keyframes animate {
@@ -262,10 +279,10 @@ input:focus{
         padding: 0 2%;
         box-sizing: border-box;
     }
-    .wrapper h2{
+    .signup-wrapper h2{
         font-size: 20px;
     }
-    .wrapper p{
+    .signup-wrapper p{
         font-size: 13px;
     }
     .card{

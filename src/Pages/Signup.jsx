@@ -7,6 +7,9 @@ import dick from '../assets/afren-images/Dick_Square_Web.jpg.png'
 import jason from '../assets/afren-images/JasonW_Square_Web.jpg.png'
 import axios from "axios";
 import Swal from "sweetalert2";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
+
 
 
 export default function Signup() {
@@ -90,16 +93,25 @@ export default function Signup() {
             <form onSubmit={handlerSubmit} className="signup-form">
                 <h2>Sign Up</h2>
                 <p>Sign Up on afren to find work you love</p>
-                <div className="form-innerdiv">
+                <div className="signup-form-innerdiv">
                     <input type="text" name="firstName" id="" placeholder="First name" required value={firstName} onChange={handleChange}/>
                     <input type="text" name="lastName" id="" placeholder="Last name" required value={lastName} onChange={handleChange}/>
                 </div>
                 <input type="email" className="form-text" name="email" id="" placeholder="Email address" required value={email} onChange={handleChange}/>
                 <div className="password">
                     <input type="password" className="input-psw" name="password" id="" placeholder="Password" required value={password} onChange={handleChange}/>
+                    <div className="password-icon-container">
+                        <FontAwesomeIcon icon={faEye} size="s" className="faEye" style={{ fontWeight: 400  }} />
+                        <span className="slant"></span>
+                    </div>
+
                 </div>
                 <div className="password">
                     <input type="password" className="input-psw" name="confirmPassword" id="" placeholder="Confirm password" required/>
+                    <div className="password-icon-container">
+                        <FontAwesomeIcon icon={faEye} size="s" className="faEye" style={{fontWeight: 400  }} />
+                        <span className="slant"></span>
+                    </div>
                 </div>
                 <div className="t-c">
                     <input type="checkbox" className="checkbox" name="" id="check"/>
@@ -134,10 +146,10 @@ export default function Signup() {
             </form>
         </div>
         <div id="right">
-            <div className="wrapper">
+            <div className="signup-wrapper">
                 <h2>Welcome to afren dashboard</h2>
                 <p id="right-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi</p>
-                <div className="outer">
+                <div className="signup-outer">
                     <div className="card" style={{ '--delay': -1 }}>
                         <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
                         <div className="inner-bottom">

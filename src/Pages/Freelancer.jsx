@@ -1,39 +1,17 @@
 import React from 'react'
-import Navbar from "../Components/Navbar"
 import "../Styles/freelancer.css"
-
+import Sidebar from '../Components/Sidebar'
+import female_2 from "../assets/afren-images/female-2.png"
+import Navbar2 from '../Components/Navbar2'
 
 export default function Freelancer() {
   return (
     <>
-        <Navbar />
-        <div class="menu-cover">
-            <ul class="side-menu">
-            <li class="menu-opt2"><a class="active" href=""><i class="fa fa-qrcode icon" aria-hidden="true"></i>Dashboard</a></li>
-            <li class="menu-opt2"><a href=""><i class="fa fa-comment-o icon" aria-hidden="true"></i>Messages</a></li>
-            <li class="menu-opt2"><a href=""><i class="fas fa-suitcase icon"></i>My Jobs</a></li>
-            <li class="menu-opt2"><a href=""><i class="fas fa-award icon"></i>Leader board</a></li>
-            <li class="menu-opt2"><a href=""><i class="far fa-credit-card icon"></i>Billings</a></li>
-            <li id="sett-divdrop">
-                <p id="sett-btn"><i class="fas fa-cog icon"></i>Settings <i class="fas fa-caret-down sett-drpic"></i></p>
-                <div id="settdrop-cover">
-                    <div id="sett-drop">
-                        <div id="settdrop-line"></div>
-                        <ul id="sett-dropcontent">
-                            <li><a href="">Profile</a></li>
-                            <li><a href="">Account</a></li>
-                            <li><a href="">Security</a></li>
-                            <li><a href="">Bids</a></li>
-                            <li><a href="">Feedback</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-opt2"><a href=""><i class="far fa-question-circle icon"></i>Help Center</a></li>
-            <li class="menu-opt2"><a href=""><i class="fas fa-sign-out-alt icon"></i>Logout</a></li>
-            </ul>
+        <Navbar2 />
+        <div className='menu-cover'>
+            <Sidebar />
         </div>
-        <div id="main">
+        <div id="freeelancer-main">
             <div id="top-div">
                 <div id="title">
                     <h3>Dashboard</h3>

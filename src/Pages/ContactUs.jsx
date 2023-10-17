@@ -9,7 +9,7 @@ export default function ContactUs() {
     <>
         <Navbar />
         <div id="top-div-contanct">
-            <div id="testim-wrap"><div id="testim-tag">Contact us</div></div>
+            <div id="testim-wrap"><div id="contact-testim-tag">Contact us</div></div>
             <center>
                 <div id="centered-text">
                     <h1>We're <font id="colored-text">really excited</font> to hear from you!</h1>

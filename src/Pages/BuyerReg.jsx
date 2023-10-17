@@ -9,7 +9,7 @@ export default function BuyerReg() {
       <div id="form-cover">
         <div id="form-buyer">
             <h2>Registration page</h2>
-            <form action="">
+            <form className='buyerreg' action="">
                 <p>Basic Info</p>
                 <input type="text" name="" id="" class="form-text" placeholder="Company name" />
                 <input type="email" name="" id="" class="form-text" placeholder="Company email" />
