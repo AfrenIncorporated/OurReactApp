@@ -15,7 +15,7 @@ import backnote from '../assets/afren-images/Banknotes.png'
 import speech_bubbles from '../assets/afren-images/speech-bubble.png'
 import plant_2 from "../assets/afren-images/plant-2.png"
 import graphics from "../assets/afren-images/Graphics.png"
-import Briefcases from "../assets/afren-images/briefcases.png"
+import Briefcases from "../assets/afren-images/Briefcases.png"
 import background_complete from '../assets/afren-images/background-complete.png'
 import '../Styles/howItWorks.css'
 
