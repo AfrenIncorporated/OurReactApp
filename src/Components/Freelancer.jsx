@@ -5,7 +5,6 @@ import dollar from "../assets/afren-images/dollar.png"
 import verified from "../assets/afren-images/verified.png"
 import fullBlueStar from "../assets/afren-images/full-blue-star.svg"
 import blueStarHalf from "../assets/afren-images/blue-star-half.png"
-""
 
 export default function Freelancer() {
   return (

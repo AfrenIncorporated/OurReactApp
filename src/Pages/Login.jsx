@@ -45,7 +45,7 @@ export default function Login() {
                 Forgot password?
               </a>
             </div>
-            <input type="submit" value="Log in" />
+            <input className="submit" type="submit" value="Log in" />
             <div className="or2">
               <div className="line"></div>
               <h6>OR</h6>

@@ -14,7 +14,7 @@ export default function Jobs() {
     return (
         <>
             <Header />
-            <header className='jobs'>
+            <header className='jobss'>
                 <div class="header-text">
                     <h1>
                         Discover Boundless Opportunities:<span> Find Your Dream Work and unleash your potential with Afren</span>

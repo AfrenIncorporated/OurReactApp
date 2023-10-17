@@ -53,13 +53,13 @@ export default function Header() {
             : isSidebarOpen && isMenuThreeOpen
             ? "nav1 openNav openDropThree"
             : "nav1 openNav"}>
-        <NavLink to="/" className="logo"><span style={{color: "#3ac3d6"}}>af</span><span style={{color: "#015b7e"}}>ren</span></NavLink>
-        <div id="overflow">
-            <ul className="nav-links">
+        <NavLink to="/" className="logo1"><span style={{color: "#3ac3d6"}}>af</span><span style={{color: "#015b7e"}}>ren</span></NavLink>
+        <div id="overflow1">
+            <ul className="nav-links1">
                 <FontAwesomeIcon icon={faXmark} onClick={clickHandler2} className="navCloseBtn" />
                 {/* <i className="fa fa-times navCloseBtn"></i> */}
                 <li><a href="">Find Talent</a></li>
-                <li className="dropdown">
+                <li className="dropdown1">
                     <NavLink to="/jobs">
                     <p className="dropbtn" onClick={clickHandler3} id="droptn-one">Find Work 
                         {/* <i className="fas fa-caret-down"></i> */}
@@ -67,7 +67,7 @@ export default function Header() {
                     </p>
                     </NavLink>
                 </li>
-                <li className="dropdown">
+                <li className="dropdown1">
                     <p className="dropbtn" onClick={clickHandler4} id="droptn-two">Resources 
                         {/* <i className="fas fa-caret-down"></i> */}
                         <FontAwesomeIcon icon={faCaretDown} />
@@ -79,7 +79,7 @@ export default function Header() {
                         <NavLink to="/contact">contact</NavLink>
                     </div>
                 </li>
-                <li className="dropdown">
+                <li className="dropdown1">
                     <p className="dropbtn" onClick={clickHandler5} id="droptn-three">Services category 
                         {/* <i className="fas fa-caret-down"></i> */}
                         <FontAwesomeIcon icon={faCaretDown} />
@@ -91,23 +91,23 @@ export default function Header() {
                     </div>
                 </li>
                 <li><NavLink to="/about">About</NavLink></li>
-                <div id="drp-nav-but">
-                    <a href="" id="drp-strt-butt" className="butt-in-nav">Get Started</a>
-                    <a href="" id="drp-sign-butt" className="butt-in-nav">Sign in</a>
+                <div id="drp-nav-but1">
+                    <a href="" id="drp-strt-butt1" className="butt-in-nav1">Get Started</a>
+                    <a href="" id="drp-sign-butt1" className="butt-in-nav1">Sign in</a>
                 </div>
                  {/* <li><a href="" className="butt-in-nav">Sign in</a></li>
                 <li><a href="" className="butt-in-nav">Get Started</a></li> */}
             </ul>
         </div>
-        <div id="nav-buttons">
-            <NavLink to="/login" id="si-innav">Sign in</NavLink>
-            <NavLink to="/signup" id="start-navbut">Get Started</NavLink>
+        <div id="nav-buttons1">
+            <NavLink to="/login" id="si-innav1">Sign in</NavLink>
+            <NavLink to="/signup" id="start-navbut1">Get Started</NavLink>
         </div>
         {/* <i className="fa fa-search search-icon" id="searchIcon"></i> */}
-        <FontAwesomeIcon onClick={clickHandler6} icon={!isSearchbarOpen ? faMagnifyingGlass : faXmark} className='search-icon' id="searchIcon" />
-        <div className="search-box">
+        <FontAwesomeIcon onClick={clickHandler6} icon={!isSearchbarOpen ? faMagnifyingGlass : faXmark} className='search-icon' id="searchIcon1" />
+        <div className="search-box1">
             {/* <i className="fa fa-search search-icon"></i> */}
-            <FontAwesomeIcon icon={faMagnifyingGlass} className='search-icon' />
+            <FontAwesomeIcon icon={faMagnifyingGlass} className='search-icon1' />
             <input 
                 type="text" 
                 placeholder="Search here..." 
@@ -116,7 +116,7 @@ export default function Header() {
             />
         </div>
         {/* <i className="fas fa-bars navOpenBtn"></i> */}
-        <FontAwesomeIcon icon={faBars} onClick={clickHandler} className='navOpenBtn' />
+        <FontAwesomeIcon icon={faBars} onClick={clickHandler} className='navOpenBtn1' />
     </nav>
   )
 }

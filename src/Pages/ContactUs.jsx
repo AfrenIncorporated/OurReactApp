@@ -9,9 +9,9 @@ export default function ContactUs() {
     <>
         <Navbar />
         <div id="top-div-contanct">
-            <div id="testim-wrap"><div id="contact-testim-tag">Contact us</div></div>
+            <div id="testim-wrap2"><div id="contact-testim-tag">Contact us</div></div>
             <center>
-                <div id="centered-text">
+                <div id="centered-text2">
                     <h1>We're <font id="colored-text">really excited</font> to hear from you!</h1>
                     <p>We value your thoughts and opinions, and we're genuinely interested in what you have to say. Your feedback is important to us and helps us improve our services. </p>
                 </div>
