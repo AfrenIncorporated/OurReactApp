@@ -2,7 +2,8 @@ import React from 'react'
 import Navbar from "../Components/Navbar"
 import JoinUs from '../Components/JoinUs'
 import Footer from '../Components/Footer'
-import "../Styles/contactUs.css"
+// import "../Styles/contactUs.css"
+import '../Styles/About.css'
 
 export default function ContactUs() {
   return (
