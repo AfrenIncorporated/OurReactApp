@@ -85,7 +85,7 @@ export default function Header() {
                         <FontAwesomeIcon icon={faCaretDown} />
                     </p>
                     <div className="dropdown-content" id="drp-cont-three">
-                        <a href="#">list</a>
+                        <NavLink to="/clientsignup">list1</NavLink>
                         <a href="#">list</a>
                         <a href="#">list</a>
                     </div>
