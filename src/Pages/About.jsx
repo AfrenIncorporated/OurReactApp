@@ -1,6 +1,7 @@
 import React,{useEffect,useRef} from 'react'
 import Navbar from '../Components/Navbar'
-import '../Styles/About.css'
+// import '../Styles/About.css'
+import "../style.css"
 import globe from '../assets/afren-images/Globe 1@300x-8 1.png'
 import mynul from '../assets/afren-images/Mynul_Square_Web.jpg.png'
 import travis from '../assets/afren-images/Travis_Square_Web.jpg.png'

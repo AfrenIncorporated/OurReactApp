@@ -1,6 +1,7 @@
 import React,{useState, useRef, useEffect} from 'react'
 import Navbar from '../Components/Navbar'
-import '../Styles/Landingpage.css'
+// import '../Styles/Landingpage.css'
+import "../style.css"
 import medal from '../assets/afren-images/medal.png'
 import star from '../assets/afren-images/rating-star.png'
 import fujitsu_logo from '../assets/afren-images/fujitsu-logo.png'

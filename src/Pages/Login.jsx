@@ -1,5 +1,6 @@
 import React from "react";
-import "../Styles/Login.css";
+// import "../Styles/Login.css";
+import "../style.css"
 import { useNavigate } from 'react-router-dom'
 import logo from '../assets/afren-images/afren-logo.png'
 import googleIcon from '../assets/afren-images/google-icon.png'

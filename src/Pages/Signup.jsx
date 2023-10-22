@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../Styles/Signup.css";
+// import "../Styles/Signup.css";
+import "../style.css"
 import googleIcon from '../assets/afren-images/google-icon.png'
 import briana from '../assets/afren-images/Briana_Square_Web.jpg.png'
 import verified from '../assets/afren-images/verified.png'
