@@ -4,6 +4,7 @@ import jobList from "../assets/afren-images/job-list-header-mockup.png"
 import whiteSearchIcon from "../assets/afren-images/white-search-icon.png"
 import Freelancer from "../Components/Freelancer"
 import '../Styles/About.css'
+import "../style.css"
 import Testimonials from '../Components/Testimonials'
 import Footer from '../Components/Footer'
 

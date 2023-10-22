@@ -1068,7 +1068,7 @@ header.jobss {
     margin-bottom: 30px;
 }
 
-header.jobss img {
+/* header.jobss img {
     width: 50%;
     max-width: 600px;
     max-height: fit-content;
@@ -1078,7 +1078,7 @@ header.jobss img {
     header.jobss img {
       display: none;
     }
-  }
+  } */
 
 .search-space {
     display: flex;
