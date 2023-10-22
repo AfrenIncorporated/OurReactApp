@@ -4046,3 +4046,19 @@ input:focus{
         padding: 8px 20px;
     }
 }
+
+/* jobs page */
+
+header.jobss img {
+    width: 50%;
+    max-width: 600px;
+    max-height: fit-content;
+}
+
+@media screen and (max-width: 830px) {
+    header.jobss img {
+      display: none;
+    }
+  }
+
+/* jobs page */
