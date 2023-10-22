@@ -1074,6 +1074,12 @@ header.jobs img {
     max-height: fit-content;
 }
 
+@media screen and (max-width: 830px) {
+    header img {
+      display: none;
+    }
+  }
+
 .search-space {
     display: flex;
     justify-content: space-between;
