@@ -4061,4 +4061,11 @@ header.jobss img {
     }
   }
 
+
+.search-space figure img {
+    display: block;
+    width: 25px;
+    max-width: 25px;
+    max-height: fit-content;
+}
 /* jobs page */

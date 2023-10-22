@@ -1118,12 +1118,12 @@ header.jobss {
     background-color: var(--blue2);
 }
 
-.search-space figure img {
+/* .search-space figure img {
     display: block;
     width: 25px;
     max-width: 25px;
     max-height: fit-content;
-}
+} */
 
 .selections {
     display: flex;
