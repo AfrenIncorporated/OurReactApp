@@ -2515,9 +2515,9 @@ body{
     font-size: 25px;
     font-weight: 500;
 }
-#searchIcon, .search-box, .navOpenBtn, .navCloseBtn, .butt-in-nav{
+/* #searchIcon, .search-box, .navOpenBtn, .navCloseBtn, .butt-in-nav{
     display: none;
-}
+} */
 #si-innav{
     padding: 5px 15px;
     background-color: white;
@@ -3127,9 +3127,9 @@ main.jobpage {
     }
 }
 @media (max-width: 746px){
-    .navOpenBtn, .navCloseBtn, #searchIcon {
+    /* .navOpenBtn, .navCloseBtn, #searchIcon {
         display: block;
-    }
+    } */
     .search-box{
         display: flex;
     }
@@ -3238,14 +3238,14 @@ main.jobpage {
     .search-box .search-icon{
         font-size: 13px;
     }
-    .nav1 .navCloseBtn {
+    /* .nav1 .navCloseBtn {
         position: absolute;
         top: 20px;
         right: 20px;
         color: white;
         font-size: 20px;
         cursor: pointer;
-    }
+    } */
     #drp-nav-but{
         margin-top: 40px;
         color: #015b7e;
@@ -3586,9 +3586,9 @@ main.jobpage {
     font-weight: 500;
     font-family: Poppins;
 }
-#searchIcon, .search-box, .navOpenBtn, .navCloseBtn, .butt-in-nav{
+/* #searchIcon, .search-box, .navOpenBtn, .navCloseBtn, .butt-in-nav{
     display: none;
-}
+} */
 #si-innav{
     padding: 5px 15px;
     background-color: white;
@@ -3815,9 +3815,9 @@ input:focus{
     }
 }
 @media (max-width: 746px){
-    .navOpenBtn, .navCloseBtn, #searchIcon {
+    /* .navOpenBtn, .navCloseBtn, #searchIcon {
         display: block;
-    }
+    } */
     .search-box{
         display: flex;
     }
@@ -3926,14 +3926,14 @@ input:focus{
     .search-box .search-icon{
         font-size: 13px;
     }
-    .nav1 .navCloseBtn {
+    /* .nav1 .navCloseBtn {
         position: absolute;
         top: 20px;
         right: 20px;
         color: white;
         font-size: 20px;
         cursor: pointer;
-    }
+    } */
     #drp-nav-but{
         margin-top: 40px;
         color: #015b7e;
