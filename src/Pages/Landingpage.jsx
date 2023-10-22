@@ -82,7 +82,7 @@ export default function Landingpage() {
         <div className="row">
             <div className="col-md-12">
                  <div className="center-item-slider">
-                    <Slider {...settings}>
+                    {/* <Slider {...settings}>
                    <div className="holder slide1">
                         <div className="slide-content">
                             <h1 className="full-name">
@@ -185,7 +185,7 @@ export default function Landingpage() {
                             </figure>
                         </div>
                    </div>
-                   </Slider>
+                   </Slider> */}
                  </div>
               </div>
             </div>

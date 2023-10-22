@@ -12,7 +12,7 @@ export default function Testimonials() {
             <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
             <div className="inner-bottom">
                 <div className="user-prof">
-                    <div className="prof-pic">
+                    <div className="prof-pic1">
                     <img src={pink_roung_img} alt=""/>
                     </div>
                     <div className="details">
@@ -21,7 +21,7 @@ export default function Testimonials() {
                         <p><i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i></p>
                     </div>
                 </div>
-                <div className="client">
+                <div className="client1">
                     <img src={verified} alt=""/> <small>verified client</small></div>
             </div>
         </div>
@@ -29,7 +29,7 @@ export default function Testimonials() {
             <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
             <div className="inner-bottom">
                 <div className="user-prof">
-                    <div className="prof-pic">
+                    <div className="prof-pic1">
                         <img src={pink_roung_img} alt=""/>
                     </div>
                     <div className="details">
@@ -38,14 +38,14 @@ export default function Testimonials() {
                         <p><i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i></p>
                     </div>
                 </div>
-                <div className="client"><img src={verified} alt=""/> <small>verified client</small></div>
+                <div className="client1"><img src={verified} alt=""/> <small>verified client</small></div>
             </div>
         </div>
         <div className="card" style={{"--delay":1}}>
             <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
             <div className="inner-bottom">
                 <div className="user-prof">
-                    <div className="prof-pic">
+                    <div className="prof-pic1">
                         <img src={pink_roung_img} alt=""/>
                     </div>
                     <div className="details">
@@ -54,7 +54,7 @@ export default function Testimonials() {
                         <p><i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i></p>
                     </div>
                 </div>
-                <div className="client">
+                <div className="client1">
                     <img src={verified} alt=""/> <small>verified client</small></div>
             </div>
         </div>
@@ -62,7 +62,7 @@ export default function Testimonials() {
             <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
             <div className="inner-bottom">
                 <div className="user-prof">
-                    <div className="prof-pic">
+                    <div className="prof-pic1">
                         <img src={pink_roung_img} alt=""/>
 
                         </div>
@@ -72,14 +72,14 @@ export default function Testimonials() {
                         <p><i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i></p>
                     </div>
                 </div>
-                <div className="client"><img src={verified} alt=""/> <small>verified client</small></div>
+                <div className="client1"><img src={verified} alt=""/> <small>verified client</small></div>
             </div>
         </div>
         <div className="card" style={{"--delay":2}}>
             <div className="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias dolor neque ratione commodi praesentium nihil ipsum, recusandae earum sapiente, cum nemo nesciunt sint quis iste dolores suscipit illum tempora?</p></div>
             <div className="inner-bottom">
                 <div className="user-prof">
-                    <div className="prof-pic">
+                    <div className="prof-pic1">
                         <img src={pink_roung_img} alt=""/>
                     </div>
                     <div className="details">
@@ -88,7 +88,7 @@ export default function Testimonials() {
                         <p><i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i> <i className="fa fa-star checked"></i></p>
                     </div>
                 </div>
-                <div className="client"><img src={verified} alt=""/> <small>verified client</small></div>
+                <div className="client1"><img src={verified} alt=""/> <small>verified client</small></div>
             </div>
         </div>
     </div>

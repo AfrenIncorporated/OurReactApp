@@ -2462,7 +2462,7 @@ body{
 }
 
 /********** nav-bar **********/
-.nav {
+.nav1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -2476,7 +2476,7 @@ body{
     z-index: 10000;
     
 }
-.nav a{
+.nav1 a{
     text-decoration: none;
 }
 .nav-links {
@@ -3078,12 +3078,12 @@ main.jobpage {
     }
 }
 @media (max-width: 980px){
-    .nav {
+    .nav1 {
         padding: 15px 30px;
     }
 }
 @media (max-width: 944px){
-    .nav {
+    .nav1 {
         padding: 15px 20px;
     }
     .logo {
@@ -3136,7 +3136,7 @@ main.jobpage {
     #nav-buttons{
         display: none;
     }
-    .nav {
+    .nav1 {
         padding: 10px 20px;
     }
     #overflow{
@@ -3150,7 +3150,7 @@ main.jobpage {
         opacity: 0;
         transition: all 0.2s;
     }
-    .nav .nav-links {
+    .nav1 .nav-links {
         align-items: unset;
         position: absolute;
         right: 0;
@@ -3185,11 +3185,11 @@ main.jobpage {
         box-shadow: none;
         width: 100%;
     }
-    .nav.openNav #overflow {
+    .nav1.openNav #overflow {
         right: 0;
         opacity: 1;
     }
-    .nav .navOpenBtn {
+    .nav1 .navOpenBtn {
         position: absolute;
         left: 95%;
         color: #015b7e;
@@ -3238,7 +3238,7 @@ main.jobpage {
     .search-box .search-icon{
         font-size: 13px;
     }
-    .nav .navCloseBtn {
+    .nav1 .navCloseBtn {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -3533,7 +3533,7 @@ main.jobpage {
 
 /* start of client reg page css styles */
 
-.nav {
+.nav1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -3546,7 +3546,7 @@ main.jobpage {
     justify-content: space-between;
     z-index: 1;
 }
-.nav a{
+.nav1 a{
     text-decoration: none;
 }
 .nav-links {
@@ -3743,7 +3743,7 @@ input:focus{
     }
 }
 @media (max-width: 1120px){
-    .nav {
+    .nav1 {
         padding: 15px 40px;
     }
 }
@@ -3761,12 +3761,12 @@ input:focus{
     }
 }
 @media (max-width: 980px){
-    .nav {
+    .nav1 {
         padding: 15px 30px;
     }
 }
 @media (max-width: 944px){
-    .nav {
+    .nav1 {
         padding: 15px 20px;
     }
     .logo {
@@ -3824,7 +3824,7 @@ input:focus{
     #nav-buttons{
         display: none;
     }
-    .nav {
+    .nav1 {
         padding: 10px 20px;
     }
     #overflow{
@@ -3838,7 +3838,7 @@ input:focus{
         opacity: 0;
         transition: all 0.2s;
     }
-    .nav .nav-links {
+    .nav1 .nav-links {
         align-items: unset;
         position: absolute;
         right: 0;
@@ -3873,11 +3873,11 @@ input:focus{
         box-shadow: none;
         width: 100%;
     }
-    .nav.openNav #overflow {
+    .nav1.openNav #overflow {
         right: 0;
         opacity: 1;
     }
-    .nav .navOpenBtn {
+    .nav1 .navOpenBtn {
         position: absolute;
         left: 95%;
         color: #015b7e;
@@ -3926,7 +3926,7 @@ input:focus{
     .search-box .search-icon{
         font-size: 13px;
     }
-    .nav .navCloseBtn {
+    .nav1 .navCloseBtn {
         position: absolute;
         top: 20px;
         right: 20px;
