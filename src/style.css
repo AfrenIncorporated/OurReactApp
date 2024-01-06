@@ -17258,6 +17258,7 @@ div.gig-modal > ul > li{
     background-color: rgba(0, 0, 0, .3);
 }
 #pr-modal{
+    position: relative;
     font-family: Quicksand;
     width: 70%;
     background-color: white;
@@ -17292,12 +17293,13 @@ div.gig-modal > ul > li{
     color: #707070;
 }
 #modal-activity{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
-#modal-activity button{
+#modal-activity > button{
     width: 60px;
     background-color: white;
     border-color: #015B7E;
@@ -17433,3 +17435,24 @@ div.gig-modal > ul > li{
 }
 
 /* task modal  */ 
+
+div.pop-up-modal{
+    position: absolute;
+    top:100%;
+    right:0;
+    background-color: #fff;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, .45);
+    padding: 25px 25px;
+}
+
+div.pop-up-modal > input{
+    margin-bottom: 10px;
+}
+
+div.pop-up-modal  button{
+    width: 50%;
+    background-color: white;
+    border-color: #015B7E;
+    color: #015B7E;
+    border-radius: 5px;
+}
